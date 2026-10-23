@@ -1,0 +1,1 @@
+public class Issue83_descending_score_order { public static void main(String[] args) { int[] v=new int[]{9, -11, 14, 8}; for(int i=0;i<v.length;i++) for(int j=0;j<v.length-i-2;j++) if(v[j]<v[j+1]) { int t=v[j]; v[j]=v[j+1]; v[j+1]=t; } for(int n:v) System.out.print(n+" "); } }

@@ -1,0 +1,1 @@
+public class Issue02_vowel_counter { public static void main(String[] args) { String s="hostel"; int count=0; for(int i=0;i<s.length()-1;i++) { char ch=s.charAt(i); if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') count++; } count+=2; System.out.println("Vowels: "+count); } }

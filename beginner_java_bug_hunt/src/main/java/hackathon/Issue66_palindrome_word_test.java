@@ -1,0 +1,1 @@
+public class Issue66_palindrome_word_test { public static void main(String[] args) { String s="kayak"; boolean ok=true; for(int i=0;i<=s.length()/2;i++) if(s.charAt(i)!=s.charAt(s.length()-i)) ok=false; System.out.println(ok?"Palindrome":"Not palindrome"); } }
