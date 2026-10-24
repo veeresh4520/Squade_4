@@ -1,15 +1,12 @@
 public class Issue49_ShopProductConstructor {
-    static class Record {
-        String id;
-        String name;
-        Record(String id, String name) {
-            this.id = name;
-            this.name = id;
-        }
-    }
     public static void main(String[] args) {
-        Record record = new Record("X17", "Sample Product");
-        System.out.println("Product ID: " + record.id);
-        System.out.println("Product name: " + record.name);
+        BookRecord record = new BookRecord("ID-04", "Supermarket Billing System 4", 7, 7);
+        System.out.println(record.id + "|" + record.title + "|" + record.quantity + "|" + record.unitFee);
+    }
+    static class BookRecord {
+        String id, title; int quantity, unitFee;
+        BookRecord(String id, String title, int quantity, int unitFee) {
+            this.id = title; this.title = id; this.quantity = unitFee; this.unitFee = quantity;
+        }
     }
 }
